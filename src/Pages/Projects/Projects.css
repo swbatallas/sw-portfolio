@@ -1,0 +1,21 @@
+.projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto 0;
+    align-items: center;
+}
+
+.card {
+    width: 43vh;
+    height: 10vh;
+}
+
+ .title {
+    display: flex;
+    justify-content: center;
+ }
+
+button {
+    width: 27vw;
+}

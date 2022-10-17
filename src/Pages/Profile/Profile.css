@@ -1,3 +1,50 @@
 .personal {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    width: 100%;
+    padding: 10% auto 5%;
+
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    display: flex;
+    margin: 10% auto;
+}
+
+.networks {
+    margin: 20% auto;
+}
+
+@media (min-width:576px) {
+    .personal {
+    background-color: antiquewhite;
+    }
+    h1 {
+        font-size: x-large;
+    }
+
+    p {
+        font-size: large;
+    }
+}
+
+@media (min-width:992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
