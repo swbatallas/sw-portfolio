@@ -16,7 +16,9 @@ function Projects() {
           <Card.Text>
             Juego creado junto a mis compañeros de The Bridge
           </Card.Text>
-          <Button variant='primary'>Fragen</Button>
+          <Button variant='primary'>
+            Fragen
+          </Button>
         </Card.Body>
       </Card>
     </Container>

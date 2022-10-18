@@ -1,43 +1,21 @@
 import React from 'react'
-import { Container, Button, Row, Col } from 'react-bootstrap'
-import { Twitter } from 'react-bootstrap-icons';
-import { Linkedin } from 'react-bootstrap-icons';
-import { Instagram } from 'react-bootstrap-icons';
-import { EnvelopeFill } from 'react-bootstrap-icons';
-import { Github } from 'react-bootstrap-icons';
-
+import './SocialNetworks.css'
+import { Container } from 'react-bootstrap'
+import twitter from './../../assets/twitter.svg'
+import linkedin from './../../assets/linkedin.svg'
+import github from './../../assets/github.svg'
+import mail from './../../assets/mail.svg'
+import instagram from './../../assets/instagram.svg'
 
 
 export default function SocialNetworks() {
+    let nameOfNetworks = [linkedin, github, mail, twitter, instagram]
+    console.log(nameOfNetworks)
+
+
     return (
-        <Container fluid className='d-flex flex-column justify-content-center align-items-center'>
-            <Row className='m-2'>
-                <Col className='md-px-5'>
-                    <Button variant="outline-dark" href='https://twitter.com/sw_batallas'>
-                        <Twitter />
-                    </Button>
-                </Col>
-                <Col className='px-2'>
-                    <Button variant="outline-dark" href='https://www.linkedin.com/in/stewartbatallas/'>
-                        <Linkedin />
-                    </Button>
-                </Col>
-                <Col className='px-2'>
-                    <Button variant="outline-dark" href='https://www.instagram.com/sw_batallas/'>
-                        <Instagram />
-                    </Button>
-                </Col>
-                <Col className='px-2'>
-                    <Button variant="outline-dark" href='mailto:stewartbatallasminda@gmail.com'>
-                        <EnvelopeFill />
-                    </Button>
-                </Col>
-                <Col className='px-2'>
-                    <Button variant="outline-dark" href='https://github.com/swbatallas'>
-                        <Github />
-                    </Button>
-                </Col>
-            </Row>
+        <Container fluid>
+        
         </Container>
     )
 }
