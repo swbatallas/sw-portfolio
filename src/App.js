@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      <HeaderNavBar />
       <Profile id='aboutme' />
       <Skills id='skills' />
       <Projects id='projects' />
