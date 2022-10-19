@@ -1,42 +1,24 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Home.css'
-import Container from 'react-bootstrap/Container';
-import Fade from 'react-bootstrap/Fade';
-import { ArrowDown } from 'react-bootstrap-icons';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import {Navbar, Container} from 'react-bootstrap';
+
 
 
 export default function Home() {
-    const [open, setOpen] = useState(false)
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setOpen(!open)
-        }, 3000);
-        return () => clearTimeout(timer);
-    });
-
-
     return (
-        <Container fluid className='home d-flex justify-content-center align-items-center'>
-            <video className='video' src='Media/keyboardVideo.mp4' autoPlay loop muted />
-            <Container fluid className='d-flex flex-column justify-content-center align-items-center'>
-                <Row>
-                    <Col>
-                        <h1 className='text-info mw-100 display-1'>Bienvenido</h1>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className='d-flex flex-row'>
-                        <Fade in={open} appear='true' timeout='900'>
-                            <h3 className='text-info'>Desliza</h3>
-                        </Fade>
-                        <Fade in={open} appear='true' timeout='1000'>
-                            <ArrowDown className='text-info' size={30} />
-                        </Fade>
-                    </Col>
-                </Row>
+        <Navbar sticky="top" bg="light" expand="lg">
+            <Container>
+                <Navbar.Brand>Stewart Batallas</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#aboutme">Sobre mi</Nav.Link>
+                        <Nav.Link href="#skills">Habilidades</Nav.Link>
+                        <Nav.Link href="#projects">Proyectos</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
-        </Container>
-    )
+        </Navbar>
+    );
 }

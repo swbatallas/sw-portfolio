@@ -9,10 +9,10 @@ export default function SocialNetworks() {
 
 
     return (
-        <Container fluid>
+        <Container fluid className='d-flex flex-row justify-content-center align-items-center' >
             {nameOfNetworks.map((network) => (
-                <Button variant='dark'>
-                    <Image role='img' src={`Media/${network}.svg`} alt={network} />
+                <Button className='buttons d-flex justify-content center align-items-center m-1' variant='light'>
+                    <Image className='m-1' role='img' src={`Media/${network}.svg`} alt={network} />
                 </Button>
             ))}
         </Container>

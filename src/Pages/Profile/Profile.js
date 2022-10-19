@@ -1,39 +1,31 @@
 import React from 'react'
 import SocialNetworks from '../Findme/SocialNetworks';
-import { Container, Image, Row, Col } from 'react-bootstrap'
+import { Row, Col, Container, Image } from 'react-bootstrap'
 import './Profile.css'
 
 
 
 export default function Profile() {
     return (
-        <Container fluid className='personal'>
-            <Row className='presentation'>
-                <Col xs={6} md={8} className='name'>
-                    <h1 className='text-md-center'>Stewart Batallas</h1>
-                    <p className='text-md-center'>Full Stack Dev</p>
-                </Col>
-                <Col xs={6} md={4}>
-                    <Image role='img' fluid roundedCircle src='Media/stw.png' alt='foto de perfil' />
-                </Col>
-            </Row>
-            <Row className='description mt-5'>
-                    <p>Amante de la tecnologia desde pequeño,
-                        actualmente en constante aprendizaje para
-                        crear aplicaciones de calidad.
-                    </p>
-                    <p>
-                        <strong className='text-info'> React y Node.js </strong>
-                        es lo que más me gusta para desarrollar
-                        projectos full stack.
-                    </p>
-                    <p>En cuanto a mis hobbies, realizo ejercicio a diario y
-                        me gusta pasar tiempo en familia.
-                    </p>
-            </Row>
-            <div className='networks'>
+        <Container fluid='md' className='presentation mt-4'>
+            <h1>Sobre mi</h1>
+            <Container className='description'>
+                <Row className='d-flex mt-3'>
+                    <Col xs={12} md={7} className='d-flex justify-content-center align-items-center'>
+                        <Image role='img' rounded src='Media/stw.png' alt='foto de perfil' />
+                    </Col>
+                    <Col className='about-me' xs={12} md={5}>
+                        <p>
+                            Desarrollador Full Stack. Soy un estudiante de bootcamp
+                            en The Bridge y tengo experiencia realizando proyectos con React, MongoDB y Figma;
+                            entre otras tecnologias.
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+            <Container className='networks-container'>
                 <SocialNetworks />
-            </div>
+            </Container>
         </Container>
     )
 }

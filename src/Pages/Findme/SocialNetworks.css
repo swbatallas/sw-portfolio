@@ -1,10 +1,9 @@
-.social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.social img {
-    width: 80%;
-    height: auto;
-}
+
+@media (min-width:576px) {}
+
+@media (min-width:768px) {}
+
+@media (min-width:992px) {}
+
+@media (min-width:1200px) {}
