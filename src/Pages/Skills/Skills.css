@@ -6,6 +6,9 @@ img {
     height: auto;
 }
 
+.extras h4{
+    font-weight: 700;
+}
 @media((min-width:576px)) {
     img {
         width: 80%;
