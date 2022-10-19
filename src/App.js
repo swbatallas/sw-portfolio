@@ -16,17 +16,17 @@ function App() {
       <ScrollContainer>
         <ScrollPage >
           <Animator animation={Fade()}>
-            <Profile name='aboutme' />
+            <Profile id='aboutme' />
           </Animator>
         </ScrollPage>
 
         <ScrollPage>
-          <Skills />
+          <Skills id='skills'/>
         </ScrollPage>
 
         <ScrollPage>
           <Animator animation={FadeIn()}>
-            <Projects />
+            <Projects id='projects' />
           </Animator>
         </ScrollPage>
       </ScrollContainer>

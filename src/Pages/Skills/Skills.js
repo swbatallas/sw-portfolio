@@ -10,7 +10,7 @@ function Skills() {
         { name: "react", animation: MoveIn(1000, 0) },
         { name: "nodejs", animation: MoveIn(-1000, 0) }
     ]
-    return (<Container fluid className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
+    return (<Container className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
         {skillsArray.map((skill) => (
             <Animator animation={skill.animation} key={skill.name}>
                 <Container fluid className={`${skill.name} d-flex justify-content-center`}>
