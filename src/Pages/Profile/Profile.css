@@ -1,10 +1,13 @@
 .presentation {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .presentation h1 {
     font-weight: 800;
+    font-size: 300%;
+    
 }
 
 .presentation p {
@@ -15,7 +18,7 @@
 }
 
 .profile-photo img {
-    width: 90%;
+    width: 75%;
     height: auto;
 }
 
@@ -25,12 +28,12 @@
 
 @media (min-width:576px) {
     .profile-photo img {
-        width: 70%;
+        width: 50%;
         height: auto;
     }
 
     .presentation p {
-        font-size: large;
+        font-size: medium;
 
         max-width: 95%;
         margin: 15% auto 0;
@@ -49,17 +52,35 @@
         width: 60%;
         height: auto;
     }
+
+    .presentation p {
+        font-size: large;
+
+        max-width: 75%;
+        margin: 15% auto 0;
+    }
 }
 
 
 @media (min-width: 1200px) {
+
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+    }
+
     .profile-photo img {
-        width: 50%;
+        width: 60%;
         height: auto;
     }
 
     .presentation p {
         font-size: x-large;
-        max-width: 75%;
+        max-width: 100%;
+    }
+
+    .presentation h1{
+        font-size: 500%;
     }
 }

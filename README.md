@@ -13,7 +13,6 @@ You can see my personal portfolio [here](https://stwdev.netlify.app/)
 
 For use bootstrap in react, I have used [bootstrap-react](https://react-bootstrap.github.io/)
 For icons, I have used [bootstrap-icons](https://icons.getbootstrap.com/)
-For animations, I have used [react-scroll-motion](https://github.com/1000ship/react-scroll-motion)
 
 ## Licenses
 

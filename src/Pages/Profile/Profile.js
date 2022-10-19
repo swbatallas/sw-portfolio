@@ -16,7 +16,7 @@ export default function Profile() {
                     <Col xs={12} md={7} className='profile-photo d-flex justify-content-center align-items-center'>
                         <Image role='img' rounded src='Media/stw.png' alt='foto de perfil' />
                     </Col>
-                    <Col className='about-me' xs={12} md={5}>
+                    <Col className='d-flex flex-column justify-content-center align-items-center' xs={12} md={5}>
                         <p className='text-muted'>
                             Desarrollador Full Stack. Soy un estudiante de bootcamp
                             en The Bridge y tengo experiencia realizando proyectos con React, MongoDB y Figma;

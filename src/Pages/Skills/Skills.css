@@ -1,36 +1,75 @@
+.mern {
+    min-height: 100vh;
+}
+
 .mern img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
+.card {
+    width: 90%;
+}
+
+.card p{
+    font-size: small;
+}
+
 @media((min-width:576px)) {
-    img {
-        width: 80%;
+    .mern img {
+        width: 75%;
         height: auto;
     }
+    
+    .card {
+        width: 75%;
+    }
 
+    .card p{
+        font-size: small;
+    }
 }
 
 @media((min-width:768px)) {
-    img {
+    .mern img {
         width: 70%;
         height: auto;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .card p{
+        font-size: medium;
     }
 
 }
 
 @media((min-width:992px)) {
-    img {
+    .mern img {
         width: 70%;
         height: auto;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .card p{
+        font-size:larger;
     }
 
 }
 
 @media((min-width:1200px)) {
-    img {
-        width: 60%;
+    .mern img {
+        width: 90%;
         height: auto;
+    }
+
+    .card {
+        width: 90%;
     }
 
 }

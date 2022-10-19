@@ -4,12 +4,13 @@
     font-family: 'Cabin', sans-serif;
     font-family: 'Meera Inimai', sans-serif;
     font-family: 'Roboto Mono', monospace;
-	max-width: 1200px !important; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    background-color:azure;
 }
 
 .card {
     box-shadow: 1px 1px 3px 1px #999;
+    width: 80%;
 }
 
 h1,h2 {
@@ -22,4 +23,11 @@ h4,h5 {
 
 p {
     font-family: 'Roboto Mono', monospace;
+}
+
+@media ((min-width: 1200px)) {
+    h1 {
+        font-size: xx-large;
+    }
+    
 }

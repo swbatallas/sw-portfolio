@@ -4,8 +4,8 @@ import './Projects.css'
 
 function Projects() {
   return (
-    <Container className='projects'>
-      <h1>Proyectos</h1>
+    <Container className='projects pt-5'>
+      <h1 className='my-5'>Proyectos</h1>
       <Card className='card'>
         <Card.Header className='d-flex flex-column justify-content-center'>
           <Card.Img variant='top' src='Media/trivial.png' alt='imagen del trivial' />
