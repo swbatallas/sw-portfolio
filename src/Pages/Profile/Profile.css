@@ -9,7 +9,6 @@
 }
 
 .presentation p {
-    color: lightslategray;
     font-size: large;
     font-weight: 600;
     max-width: 90%;
@@ -58,5 +57,10 @@
     .profile-photo img {
         width: 50%;
         height: auto;
+    }
+
+    .presentation p {
+        font-size: x-large;
+        max-width: 75%;
     }
 }

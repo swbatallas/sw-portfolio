@@ -1,20 +1,18 @@
 .mern {
     height: 100vh;
 }
+
 img {
     width: 100%;
     height: auto;
 }
 
-.extras h4{
-    font-weight: 700;
-}
 @media((min-width:576px)) {
     img {
         width: 80%;
         height: auto;
     }
-    
+
 }
 
 @media((min-width:768px)) {
@@ -22,7 +20,7 @@ img {
         width: 70%;
         height: auto;
     }
-    
+
 }
 
 @media((min-width:992px)) {
@@ -30,13 +28,13 @@ img {
         width: 70%;
         height: auto;
     }
-    
+
 }
 
 @media((min-width:1200px)) {
     img {
-        width: 70%;
+        width: 60%;
         height: auto;
     }
-    
+
 }

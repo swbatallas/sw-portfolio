@@ -1,21 +1,23 @@
 import React from 'react'
-import { Container, Image, Card, Button } from 'react-bootstrap'
+import { Container, Card, Button } from 'react-bootstrap'
 import './Projects.css'
 
 function Projects() {
   return (
-    <Container fluid className='projects'>
+    <Container className='projects'>
       <h1>Proyectos</h1>
-      <Card border="dark" className='card'>
-        <Card.Title className='title mt-2'>
-          <strong>FRAGEN</strong>
-        </Card.Title>
-        <Image fluid src='Media/trivial.png' alt='imagen del trivial' />
-        <Card.Body>
+      <Card className='card'>
+        <Card.Header className='d-flex flex-column justify-content-center'>
+          <Card.Img variant='top' src='Media/trivial.png' alt='imagen del trivial' />
+          <Card.Title className='mt-2'>
+            FRAGEN
+          </Card.Title>
+        </Card.Header>
+        <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
           <Card.Text>
             Juego creado junto a mis compañeros de The Bridge
           </Card.Text>
-          <Button variant='primary'>
+          <Button variant='info'>
             Fragen
           </Button>
         </Card.Body>

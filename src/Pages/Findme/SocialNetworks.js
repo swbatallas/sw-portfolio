@@ -15,7 +15,7 @@ export default function SocialNetworks() {
     return (
         <Container fluid className='d-flex flex-row justify-content-center align-items-center mt-5' >
             {nameOfNetworks.map(network => (
-                <a href={network.url} target="_blank" rel="noreferrer">
+                <a href={network.url} target="_blank" rel="noreferrer" key={network.name}>
                     <Button className='buttons d-flex justify-content center align-items-center m-1'
                         variant='light'>
                         <Image className='m-1' role='img' src={`Media/${network.name}.svg`} alt={network.name} />

@@ -23,3 +23,10 @@
         height: auto;
     }
 }
+
+@media (min-width: 1200px) {
+    .buttons {
+        width: 120%;
+        height: auto;
+    }
+}

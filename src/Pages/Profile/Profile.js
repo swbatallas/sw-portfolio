@@ -17,7 +17,7 @@ export default function Profile() {
                         <Image role='img' rounded src='Media/stw.png' alt='foto de perfil' />
                     </Col>
                     <Col className='about-me' xs={12} md={5}>
-                        <p>
+                        <p className='text-muted'>
                             Desarrollador Full Stack. Soy un estudiante de bootcamp
                             en The Bridge y tengo experiencia realizando proyectos con React, MongoDB y Figma;
                             entre otras tecnologias.
