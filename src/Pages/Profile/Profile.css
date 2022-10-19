@@ -1,72 +1,66 @@
-.personal {
+.presentation {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
-.presentation {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.description {
-    width: 100% !important;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-}
-.name h1 {
-    font-size: 200% ;
+.presentation h1 {
     font-weight: 800;
 }
-.presentation img {
-    display: flex;
-    margin: 10% auto;
-    height: 70%;
-    width: 70%;
+
+.presentation p {
+    font-size: large;
+    font-weight: 600;
+    max-width: 90%;
+    margin: 10% auto 0;
 }
 
-/* .networks {
-    margin: 50% auto 5%;
-} */
+.profile-photo img {
+    width: 90%;
+    height: auto;
+}
+
+.title {
+    margin: 15% auto 5%;
+}
 
 @media (min-width:576px) {
-    .personal {
-        background-color: rgb(79, 105, 127);
-        align-items: center;
-    }
-    .name h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 300% ;
-        font-weight: 700;
+    .profile-photo img {
+        width: 70%;
+        height: auto;
     }
 
-    .name p {
-        font-size: x-large;
-    }
+    .presentation p {
+        font-size: large;
 
-    .description {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 80%;
-    }
-
-    .description p {
-        font-size: x-large;
+        max-width: 95%;
+        margin: 15% auto 0;
     }
 }
 
-@media (min-width:992px) {}
+@media (min-width: 768px) {
+    .profile-photo img {
+        width: 70%;
+        height: auto;
+    }
+}
 
-@media (min-width: 1200px) {}
+@media (min-width:992px) {
+    .profile-photo img {
+        width: 60%;
+        height: auto;
+    }
+}
 
-@media (min-width: 1400px) {}
+
+@media (min-width: 1200px) {
+    .profile-photo img {
+        width: 50%;
+        height: auto;
+    }
+
+    .presentation p {
+        font-size: x-large;
+        max-width: 75%;
+    }
+}

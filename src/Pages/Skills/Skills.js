@@ -1,45 +1,43 @@
 import React from 'react'
 import './Skills.css'
-import { Container, Image } from 'react-bootstrap'
-import mongo from './../../assets/mongo.png'
-import express from './../../assets/express.png'
-import react from './../../assets/react.png'
-import nodejs from '../../assets/nodejs.png'
-import { Animator, batch, MoveIn, Fade } from 'react-scroll-motion';
-
+import { Container, Image, Card, Button } from 'react-bootstrap'
+import { Animator, MoveIn } from 'react-scroll-motion';
 
 function Skills() {
-    return (
-        <Container fluid className='skills py-5 d-flex flex-column align-items-center'>
-            <Animator animation={batch(MoveIn(-1000, 0), Fade())}>
-                <Container fluid className='mern'>
-                    <Image fluid src={mongo} />
+    const skillsArray = [
+        { name: "mongo", animation: MoveIn(1000, 0) },
+        { name: "express", animation: MoveIn(-1000, 0) },
+        { name: "react", animation: MoveIn(1000, 0) },
+        { name: "nodejs", animation: MoveIn(-1000, 0) }
+    ]
+    return (<Container fluid className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
+        {skillsArray.map((skill) => (
+            <Animator animation={skill.animation} key={skill.name}>
+                <Container fluid className={`${skill.name} d-flex justify-content-center`}>
+                    <Image role='img' fluid src={`Media/${skill.name}.png`} alt={`${skill} icon`} />
                 </Container>
             </Animator>
-            <Animator animation={batch(MoveIn(1000, 0), Fade())}>
-                <Container fluid className='mern'>
-                    <Image fluid src={express} />
-                </Container>
-            </Animator>
-            <Animator animation={batch(MoveIn(-1000, 0), Fade())}>
-                <Container fluid className='mern'>
-                    <Image fluid src={react} />
-                </Container>
-            </Animator>
-            <Animator animation={batch(MoveIn(1000, 0), Fade())}>
-                <Container fluid className='mern' >
-                    <Image fluid src={nodejs} />
-                </Container>
-            </Animator>
-            <Animator animation={Fade()}>
-            <Container className='py-5 my-5 d-flex justify-content-center align-self-end'>
-                <h5 className='w-75'>Además de tener experiencia con HTML, CSS, JS,
-                    MySQL, bootstrap, Figma, i18n,
-                    AWS, Firebase, entre otros...
-                </h5>
-                </Container>
-            </Animator>
-        </Container>
+        ))}
+        <Animator animation={MoveIn(1000, 0)}>
+            <Card className='card mt-5 w-75'>
+                <Card.Header>
+                    <Card.Title>
+                        MERN Stack
+                    </Card.Title>
+                </Card.Header>
+                <Card.Body>
+                    <Card.Text>
+                        También tengo experiencia con HTML,CSS, JavaScript, Bootstrap, PrimeReact, MySQL,
+                        Figma, Firebase, entre otros. Quieres saber mas sobre el MERN stack?
+                    </Card.Text>
+                    <Button href='https://www.thebridge.tech/bootcamps/bootcamp-fullstack-developer'
+                        target="_blank" rel="noreferrer" variant='secondary'>
+                        Pulsa aqui
+                    </Button>
+                </Card.Body>
+            </Card>
+        </Animator>
+    </Container>
     )
 }
 

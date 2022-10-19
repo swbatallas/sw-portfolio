@@ -1,10 +1,32 @@
-.social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.buttons {
+    width:105%;
+    height: auto;
 }
 
-.social img {
-    width: 80%;
-    height: auto;
+@media (min-width:576px) {
+    .buttons {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .buttons {
+        width:120%;
+        height: auto;
+    }
+}
+
+@media (min-width:992px) {
+    .buttons {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .buttons {
+        width: 120%;
+        height: auto;
+    }
 }

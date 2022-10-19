@@ -1,32 +1,36 @@
 import {
   Animator, ScrollContainer,
-  ScrollPage, batch, FadeIn, Fade
+  ScrollPage, FadeIn, Fade
 } from 'react-scroll-motion';
 import './App.css';
 import Profile from './Pages/Profile/Profile';
 import Skills from './Pages/Skills/Skills';
 import Projects from './Pages/Projects/Projects';
-
+import HeaderNavBar from './Pages/Home/HeaderNavBar';
 
 function App() {
-  const ZoomInScrollOut = batch(FadeIn(), Fade());
 
   return (
-    <ScrollContainer>
-      <ScrollPage page={0}>
-        <Animator animation={ZoomInScrollOut}>
-          <Profile />
-        </Animator>
-      </ScrollPage>
+    <>
+      <HeaderNavBar />
+      <ScrollContainer>
+        <ScrollPage >
+          <Animator animation={Fade()}>
+            <Profile name='aboutme' />
+          </Animator>
+        </ScrollPage>
 
-      <ScrollPage page={1}>
-        <Skills />
-      </ScrollPage>
+        <ScrollPage>
+          <Skills />
+        </ScrollPage>
 
-      <ScrollPage page={2}>
-        <Projects />
-      </ScrollPage>
-    </ScrollContainer>
+        <ScrollPage>
+          <Animator animation={FadeIn()}>
+            <Projects />
+          </Animator>
+        </ScrollPage>
+      </ScrollContainer>
+    </>
   );
 }
 

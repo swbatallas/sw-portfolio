@@ -1,6 +1,25 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Meera Inimai', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+	max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.card {
+    box-shadow: 1px 1px 3px 1px #999;
+}
+
+h1,h2 {
+    font-family: 'Cabin', sans-serif;
+}
+
+h4,h5 {
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
 }

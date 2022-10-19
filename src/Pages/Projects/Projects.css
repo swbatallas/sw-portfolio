@@ -2,16 +2,13 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 5% auto 0;
-    align-items: center;
+    margin: 20% auto 0;
 }
 
 .card {
-    width: 43vh;
-    height: 10vh;
+    min-width: 18vw;
 }
-
- .title {
-    display: flex;
-    justify-content: center;
- }
+.card img{
+    min-width: 16vw;
+    height: auto;
+}
