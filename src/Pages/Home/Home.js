@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Home.css'
-import keyboardVideo from '../../assets/keyboardVideo.mp4'
 import Container from 'react-bootstrap/Container';
 import Fade from 'react-bootstrap/Fade';
 import { ArrowDown } from 'react-bootstrap-icons';
@@ -20,7 +19,7 @@ export default function Home() {
 
     return (
         <Container fluid className='home d-flex justify-content-center align-items-center'>
-            <video className='video' src={keyboardVideo} autoPlay loop muted />
+            <video className='video' src='Media/keyboardVideo.mp4' autoPlay loop muted />
             <Container fluid className='d-flex flex-column justify-content-center align-items-center'>
                 <Row>
                     <Col>

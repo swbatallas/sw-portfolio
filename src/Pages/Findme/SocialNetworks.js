@@ -1,21 +1,20 @@
 import React from 'react'
 import './SocialNetworks.css'
-import { Container } from 'react-bootstrap'
-import twitter from './../../assets/twitter.svg'
-import linkedin from './../../assets/linkedin.svg'
-import github from './../../assets/github.svg'
-import mail from './../../assets/mail.svg'
-import instagram from './../../assets/instagram.svg'
+import { Container, Button, Image } from 'react-bootstrap'
 
 
 export default function SocialNetworks() {
-    let nameOfNetworks = [linkedin, github, mail, twitter, instagram]
+    let nameOfNetworks = ['linkedin', 'github', 'mail', 'twitter', 'instagram']
     console.log(nameOfNetworks)
 
 
     return (
         <Container fluid>
-        
+            {nameOfNetworks.map((network) => (
+                <Button variant='dark'>
+                    <Image role='img' src={`Media/${network}.svg`} alt={network} />
+                </Button>
+            ))}
         </Container>
     )
 }

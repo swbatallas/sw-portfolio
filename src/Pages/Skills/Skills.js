@@ -1,7 +1,7 @@
 import React from 'react'
 import './Skills.css'
 import { Container, Image } from 'react-bootstrap'
-import { Animator, batch, MoveIn, Fade } from 'react-scroll-motion';
+import { Animator, Fade } from 'react-scroll-motion';
 
 
 function Skills() {
@@ -10,7 +10,7 @@ function Skills() {
         {skillsArray.map((skill) => (
             <Animator animation={Fade()}>
                 <Container fluid className={skill}>
-                    <Image role='img' fluid src={`Images/${skill}.png`} alt={`${skill} icon`} />
+                    <Image role='img' fluid src={`Media/${skill}.png`} alt={`${skill} icon`} />
                 </Container>
             </Animator>
         ))}

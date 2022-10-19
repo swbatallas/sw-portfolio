@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialNetworks from '../Findme/SocialNetworks';
-import stw from '../../assets/stw.png'
 import { Container, Image, Row, Col } from 'react-bootstrap'
 import './Profile.css'
 
@@ -15,7 +14,7 @@ export default function Profile() {
                     <p className='text-md-center'>Full Stack Dev</p>
                 </Col>
                 <Col xs={6} md={4}>
-                    <Image role='img' fluid roundedCircle src={stw} alt='foto de perfil' />
+                    <Image role='img' fluid roundedCircle src='Media/stw.png' alt='foto de perfil' />
                 </Col>
             </Row>
             <Row className='description mt-5'>
