@@ -11,9 +11,9 @@ export default function HeaderNavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="aboutme">Sobre mi</Nav.Link>
-                        <Nav.Link href="skills">Habilidades</Nav.Link>
-                        <Nav.Link href="projects">Proyectos</Nav.Link>
+                        <Nav.Link href="#aboutme">Sobre mi</Nav.Link>
+                        <Nav.Link href="#skills">Habilidades</Nav.Link>
+                        <Nav.Link href="#projects">Proyectos</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

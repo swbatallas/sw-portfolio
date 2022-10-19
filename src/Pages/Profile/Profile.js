@@ -7,7 +7,7 @@ import './Profile.css'
 
 export default function Profile() {
     return (
-        <Container fluid='md' className='presentation mt-4'>
+        <Container className='presentation mt-4'>
             <Container fluid className='title d-flex justify-content-center align-items-center'>
                 <h1>Sobre mi</h1>
             </Container>

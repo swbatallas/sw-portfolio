@@ -4,7 +4,7 @@
     font-family: 'Cabin', sans-serif;
     font-family: 'Meera Inimai', sans-serif;
     font-family: 'Roboto Mono', monospace;
-	max-width: 1200px; 
+	max-width: 1200px !important; 
     margin: 0 auto; 
 }
 
