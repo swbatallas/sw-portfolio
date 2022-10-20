@@ -9,11 +9,15 @@
     font-size: 300%;
 }
 
-.card-project {
-    min-width: 18vw;
+.card-project button {
+    font-size: small;
 }
 
-.card img{
+.card-project {
+    width: 90%;
+}
+
+.card-project img{
     min-width: 16vw;
     height: auto;
 }
@@ -22,6 +26,17 @@
     .projects {
         min-height: 100vh;
     }
+}
+
+@media ((min-width:768px)) {
+    .card-project {
+        width: 75%;
+    }
+
+    .card-project button {
+        font-size: medium;
+    }
+
 }
 
 @media ((min-width:1200px)) {

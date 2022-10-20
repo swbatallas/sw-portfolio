@@ -28,7 +28,7 @@ function Projects() {
             </Card.Title>
           </Card.Header>
           <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-            <Card.Text>
+            <Card.Text className='text-center'>
               Juego creado junto a mis compañeros de The Bridge
             </Card.Text>
             <Button variant='info'>
