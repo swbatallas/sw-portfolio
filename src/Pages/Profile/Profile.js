@@ -1,5 +1,5 @@
 import React from 'react'
-import SocialNetworks from '../Findme/SocialNetworks';
+import SocialNetworks from '../../Components/Findme/SocialNetworks';
 import { Row, Col, Container, Image } from 'react-bootstrap'
 import './Profile.css'
 import { Outlet } from 'react-router-dom';

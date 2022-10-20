@@ -13,12 +13,12 @@ export default function SocialNetworks() {
     ]
 
     return (
-        <Container className='d-flex flex-row justify-content-center align-items-center mt-5' >
+        <Container className='d-flex flex-row justify-content-center align-items-center my-4' >
             {nameOfNetworks.map(network => (
                 <a href={network.url} target="_blank" rel="noreferrer" key={network.name}>
-                    <Button size="lg" className='buttons mx-1 d-flex justify-content center align-items-center'
+                    <Button className='buttons d-flex justify-content center align-items-center'
                         variant='light'>
-                        <Image className='m-1' role='img' src={`Media/${network.name}.svg`} alt={network.name} />
+                        <Image className='' role='img' src={`Media/${network.name}.svg`} alt={network.name} />
                     </Button>
                 </a>
             ))}
