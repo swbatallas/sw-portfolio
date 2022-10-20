@@ -2,12 +2,12 @@
     height: 100%;
 }
 .mern img {
-    width: 80%;
+    width: 55%;
     height: auto;
 }
 
 .card {
-    width: 80%;
+    width: 55%;
 }
 
 .card p{
@@ -18,26 +18,7 @@
     margin-top: 0;
 }
 
-@media((min-width:576px)) {
-    .mern img {
-        width: 55%;
-        height: auto;
-    }
-    
-    .card {
-        width: 55%;
-    }
-}
-
 @media((min-width:768px)) {
-    .mern img {
-        width: 50%;
-        height: auto;
-    }
-
-    .card {
-        width: 50%;
-    }
 
     .card p{
         font-size: medium;
@@ -46,29 +27,9 @@
 }
 
 @media((min-width:992px)) {
-    .mern img {
-        width: 60%;
-        height: auto;
-    }
-
-    .card {
-        width: 60%;
-    }
 
     .card p{
         font-size:larger;
-    }
-
-}
-
-@media((min-width:1200px)) {
-    .mern img {
-        width: 50%;
-        height: auto;
-    }
-
-    .card {
-        width: 50%;
     }
 
 }
