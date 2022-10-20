@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useRef, useLayoutEffect } from 'react'
 import './Skills.css'
 import { Container, Image, Card, Button } from 'react-bootstrap'
 import { motion } from 'framer-motion';
 
 function Skills() {
     const skillsArray = ["mongo", "express", "react", "nodejs"]
+    const skillsRef = useRef(null)
+
+    useLayoutEffect(() => {
+        if (skillsRef) {
+            setTimeout(() => {skillsRef.current.scrollIntoView()}, 500)
+        }
+    }, [skillsRef])
 
     return (<motion.div
         intial={{ width: 0 }}
         animate={{ width: '100%' }}
-        exit={{ x: window.innerWidth, transition: {duration: 0.4} }}>
-        <Container className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
+        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}>
+        <Container ref={skillsRef} className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
             {skillsArray.map((skill) => (
                 <Container fluid key={skill} className={`${skill} d-flex justify-content-center`}>
                     <Image role='img' src={`Media/${skill}.png`} alt={`${skill} icon`} />
