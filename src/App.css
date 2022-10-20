@@ -5,12 +5,11 @@
     font-family: 'Meera Inimai', sans-serif;
     font-family: 'Roboto Mono', monospace;
     margin: 0 auto;
-    background-color:azure;
+    background-color: white;
 }
 
 .card {
     box-shadow: 1px 1px 3px 1px #999;
-    width: 80%;
 }
 
 h1,h2 {

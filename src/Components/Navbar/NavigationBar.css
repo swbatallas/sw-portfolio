@@ -1,0 +1,15 @@
+.navbar button {
+    font-size: small;
+}
+
+@media ((min-width:992px)) {
+    .navbar {
+        font-size: large;
+    }
+}
+
+@media ((min-width:1200px)) {
+    .navbar {
+        font-size: x-large;
+    }
+}

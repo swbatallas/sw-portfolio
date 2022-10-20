@@ -1,7 +1,6 @@
 .presentation {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
 .presentation h1 {
@@ -12,7 +11,7 @@
 
 .presentation p {
     font-size: large;
-    font-weight: 600;
+    font-weight: 00;
     max-width: 90%;
     margin: 10% auto 0;
 }
@@ -71,7 +70,7 @@
     }
 
     .profile-photo img {
-        width: 60%;
+        width: 50%;
         height: auto;
     }
 
