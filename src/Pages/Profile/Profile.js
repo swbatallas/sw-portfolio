@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function Profile() {
     return (
-        <Container className='presentation mt-4'>
+        <Container className='presentation'>
             <Container fluid className='title d-flex justify-content-center align-items-center'>
                 <h1>Stewart Batallas</h1>
             </Container>
