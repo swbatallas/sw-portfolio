@@ -1,5 +1,5 @@
 import React, { useRef, useLayoutEffect } from 'react'
-import { Container, Card, Button } from 'react-bootstrap'
+import { Container, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
 import './Projects.css'
 import { motion } from 'framer-motion';
 
@@ -9,9 +9,15 @@ function Projects() {
 
   useLayoutEffect(() => {
     if (projectsRef) {
-      setTimeout(() => {projectsRef.current.scrollIntoView()}, 300)
+      setTimeout(() => { projectsRef.current.scrollIntoView() }, 300)
     }
   }, [projectsRef])
+
+  const fragenTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      Próximamente disponible
+    </Tooltip>
+  );
 
   return (
     <motion.div
@@ -29,11 +35,13 @@ function Projects() {
           </Card.Header>
           <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
             <Card.Text className='text-center'>
-              Juego creado junto a mis compañeros de The Bridge
+              Juego de trivial en desarrollo creado junto a mis compañeros de The Bridge.
             </Card.Text>
-            <Button variant='info'>
-              Fragen
-            </Button>
+            <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={fragenTooltip}>
+              <Button variant='info'>
+                Fragen
+              </Button>
+            </OverlayTrigger>
           </Card.Body>
         </Card>
       </Container>

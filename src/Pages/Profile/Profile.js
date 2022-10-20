@@ -19,7 +19,7 @@ export default function Profile() {
                         <p className='text-muted'>
                             Desarrollador Full Stack. Soy un estudiante de bootcamp
                             en The Bridge y tengo experiencia realizando proyectos con React,
-                            MongoDB y Figma; entre otras tecnologias.
+                            MongoDB y Figma; entre otras tecnologías.
                         </p>
                         <SocialNetworks />
                     </Col>
