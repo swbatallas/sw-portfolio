@@ -9,7 +9,7 @@ function Skills() {
     return (<motion.div
         intial={{ width: 0 }}
         animate={{ width: '100%' }}
-        exit={{ x: window.innerWidth, transition: {duration: 0.1} }}>
+        exit={{ x: window.innerWidth, transition: {duration: 0.4} }}>
         <Container className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
             {skillsArray.map((skill) => (
                 <Container fluid key={skill} className={`${skill} d-flex justify-content-center`}>

@@ -9,7 +9,7 @@ function Projects() {
     <motion.div
       intial={{ width: 0 }}
       animate={{ width: '100%' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
+      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}>
       <Container className='projects mt-5'>
         <h1 className='my-5'>Proyectos</h1>
         <Card className='card-project'>
