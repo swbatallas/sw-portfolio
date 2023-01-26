@@ -1,0 +1,20 @@
+{
+	"nav": {
+		"about": "Sobre Mi",
+		"skills": "Habilidades",
+		"projects": "Proyectos"
+	},
+	"profile-photo": "foto de perfil",
+	"description": "Desarrollador Full Stack. Soy un estudiante de bootcamp en The Bridge y tengo experiencia realizando proyectos con React, MongoDB y Figma; entre otras tecnologías.",
+	"projectstitle": "Proyectos",
+	"trivial-image": "imagen del trivial",
+	"trivial-description": "Juego de trivial en desarrollo creado junto a mis compañeros de The Bridge.",
+	"htmlcssjs": "HTML, CSS y JavaScript",
+	"icon": {
+		"mongo": "logo de mongoDB",
+		"express": "logo de ExpressJS",
+		"react": "logo de ReactJS",
+		"nodejs": "logo de NodeJS"
+	},
+	"knowledges": "Conocimientos"
+}
