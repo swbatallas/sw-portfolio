@@ -1,7 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react'
 import './Skills.css'
 import { Container, Image, Card } from 'react-bootstrap'
-import { motion } from 'framer-motion';
 import { useTranslation } from "react-i18next";
 
 
@@ -16,10 +15,7 @@ function Skills() {
         }
     }, [skillsRef])
 
-    return (<motion.div
-        intial={{ width: 0 }}
-        animate={{ width: '100%' }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}>
+    return (
         <Container ref={skillsRef} className='mern d-flex flex-column justify-content-center align-items-center mt-5'>
             {skillsArray.map((skill) => (
                 <Container fluid key={skill} className={`${skill} d-flex justify-content-center`}>
@@ -33,20 +29,19 @@ function Skills() {
                     </Card.Title>
                 </Card.Header>
                 <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Bootstrap</li>
-                            <li>PrimeFaces</li>
-                            <li>MySQL</li>
-                            <li>Firebase</li>
-                            <li>Figma</li>
-                        </ul>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>PrimeFaces</li>
+                        <li>MySQL</li>
+                        <li>Firebase</li>
+                        <li>Figma</li>
+                    </ul>
                 </Card.Body>
             </Card>
         </Container>
-    </motion.div>
     )
 }
 

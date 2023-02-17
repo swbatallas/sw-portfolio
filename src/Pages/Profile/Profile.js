@@ -17,7 +17,7 @@ export default function Profile() {
             <Container className='description'>
                 <Row className=' d-flex mt-3'>
                     <Col xs={12} md={7} className='profile-photo d-flex justify-content-center align-items-center'>
-                        <Image role='img' rounded src='Media/stw.png' alt={t('profile-photo')} />
+                        <Image role='img' rounded src='Media/stw-color.jpg' alt={t('profile-photo')} />
                     </Col>
                     <Col className='d-flex flex-column justify-content-center align-items-center' xs={12} md={5}>
                         <p className='text-muted'>

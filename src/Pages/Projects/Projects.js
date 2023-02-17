@@ -1,7 +1,6 @@
 import React, { useRef, useLayoutEffect } from 'react'
 import { Container, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
 import './Projects.css'
-import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 
@@ -22,10 +21,6 @@ function Projects() {
   );
 
   return (
-    <motion.div
-      intial={{ width: 0 }}
-      animate={{ width: '100%' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}>
       <Container ref={projectsRef} className='projects mt-5'>
         <h1 className='my-5'>{t('projectstitle')}</h1>
         <Card className='card-project'>
@@ -47,7 +42,6 @@ function Projects() {
           </Card.Body>
         </Card>
       </Container>
-    </motion.div>
   )
 }
 
