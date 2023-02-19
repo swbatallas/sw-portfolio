@@ -6,7 +6,7 @@
 .presentation h1 {
     font-weight: 800;
     font-size: 300%;
-    
+
 }
 
 .presentation p {
@@ -19,6 +19,12 @@
 .profile-photo img {
     width: 75%;
     height: auto;
+    transition: transform .2s;
+}
+
+
+.profile-photo img:hover {
+    transform: scale(1.5);
 }
 
 .title {
@@ -79,7 +85,7 @@
         max-width: 100%;
     }
 
-    .presentation h1{
+    .presentation h1 {
         font-size: 500%;
     }
 }

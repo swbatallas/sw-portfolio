@@ -5,7 +5,7 @@
 		"projects": "Projects"
 	},
 	"profile-photo": "profile photo",
-	"description": "Full Stack Developer. I am a bootcamp student at The Bridge and I have experience doing projects with React, MongoDB and Figma; among other technologies.",
+	"description": "Hello! I am passionate about technology since I was a child, so I took a bootcamp to become a professional in web development. Currently, I am increasing my knowledge in a self-taught way.",
 	"projectstitle": "Projects",
 	"trivial-image": "trivial image",
 	"trivial-description": "Trivia game in development created together with my colleagues from The Bridge.",
@@ -15,5 +15,6 @@
 		"react": "logo de ReactJS",
 		"nodejs": "logo de NodeJS"
 	},
-	"knowledges": "Knowledges"
+	"knowledges": "Knowledges",
+	"download-resume": "Download resume"
 }
