@@ -10,7 +10,7 @@ export default function SocialNetworks() {
         { name: 'Twitter', url: 'https://twitter.com/sw_batallas' },
         { name: 'Instagram', url: 'https://instagram.com/sw_batallas/' },
         { name: 'Mail', url: 'mailto:stewartbatallasminda@gmail.com' },
-        { name: 'CV', url: '#' }
+        { name: 'CV', url: 'stewart-cv-2002.pdf' }
     ]
 
     return (
@@ -25,7 +25,7 @@ export default function SocialNetworks() {
                     <a href={network.url} target="_blank" rel="noreferrer" key={network.name}>
                         <Button className='buttons d-flex justify-content center align-items-center'
                             variant='light'>
-                            <Image className='' role='img' src={`Media/${network.name.toLowerCase()}.svg`} alt={network.name} />
+                            <Image role='img' src={`Media/${network.name.toLowerCase()}.svg`} alt={network.name} />
                         </Button>
                     </a>
 

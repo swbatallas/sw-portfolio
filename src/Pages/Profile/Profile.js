@@ -10,7 +10,7 @@ export default function Profile() {
     const { t } = useTranslation();
 
     return (
-        <Container className='presentation'>
+        <Container className='presentation min-vh-100'>
             <Container fluid className='title d-flex justify-content-center align-items-center'>
                 <h1>Stewart Batallas</h1>
             </Container>
