@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from 'react'
+import React, { useRef } from 'react'
 import { Container, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
 import './Projects.css'
 import { useTranslation } from 'react-i18next';
@@ -8,11 +8,11 @@ function Projects() {
   const { t } = useTranslation();
   const projectsRef = useRef(null)
 
-  useLayoutEffect(() => {
+/*   useLayoutEffect(() => {
     if (projectsRef) {
       setTimeout(() => { projectsRef.current.scrollIntoView() }, 300)
     }
-  }, [projectsRef])
+  }, [projectsRef]) */
 
   const fragenTooltip = (props) => (
     <Tooltip id="button-tooltip" {...props}>
