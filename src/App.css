@@ -1,10 +1,10 @@
 * {
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;
-    font-family: 'Meera Inimai', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    font-family: 'Athiti', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
 }
 
@@ -12,21 +12,25 @@
     box-shadow: 1px 1px 3px 1px #999;
 }
 
-h1,h2 {
-    font-family: 'Cabin', sans-serif;
+h1 {
+    font-family: 'Montserrat', sans-serif;
 }
 
-h4,h5 {
-    font-family: 'Meera Inimai', sans-serif;
+.title {
+    font-weight: 800;
+    font-size: 200%;
+}
+
+h2,
+h3 {
+    font-family: 'Athiti', sans-serif;
+}
+
+h4,
+h5 {
+    font-family: 'Heebo', sans-serif;
 }
 
 p {
-    font-family: 'Roboto Mono', monospace;
-}
-
-@media ((min-width: 1200px)) {
-    h1 {
-        font-size: xx-large;
-    }
-    
+    font-family: 'Heebo', sans-serif;
 }

@@ -1,17 +1,18 @@
 import './App.css';
 import Profile from './Pages/Profile/Profile';
 import Projects from './Pages/Projects/Projects';
-import { Container } from 'react-bootstrap';
 import Skills from './Pages/Skills/Skills';
+import ScrollBar from './Components/ScrollBar/ScrollBar';
 
 function App() {
 
   return (
-    <Container>
+    <>
+      <ScrollBar />
       <Profile />
       <Skills />
       <Projects />
-    </Container>
+    </>
 
   );
 }

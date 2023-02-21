@@ -21,8 +21,8 @@ export default function SocialNetworks() {
                         {network.name}
                     </Tooltip>
                 )}
-                    placement="top">
-                    <a href={network.url} target="_blank" rel="noreferrer" key={network.name}>
+                    placement="top" key={network.name}>
+                    <a href={network.url} target="_blank" rel="noreferrer">
                         <Button className='buttons d-flex justify-content center align-items-center'
                             variant='light'>
                             <Image role='img' src={`Media/${network.name.toLowerCase()}.svg`} alt={network.name} />

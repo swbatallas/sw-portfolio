@@ -1,0 +1,13 @@
+.progressBar {
+    height: 3px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.progressBarStyle {
+    height: 3px;
+    background-color: rgb(89, 203, 232);
+}
