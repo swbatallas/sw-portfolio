@@ -1,6 +1,7 @@
 .presentation {
     display: flex;
     flex-direction: column;
+    transition: background-color .2s linear
 }
 
 .presentation p {
@@ -17,13 +18,26 @@
 
 
 .profile-photo img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
+}
+
+.hover-text {
+    transition: opacity .2s;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+}
+.hover-text:hover {
+    cursor:default;
 }
 
 @media (min-width:576px) {
     .profile-photo img {
         width: 50%;
         height: auto;
+    }
+
+    .profile-photo img:hover {
+        transform: scale(1.5);
     }
 
     .presentation p {
@@ -39,6 +53,10 @@
         height: auto;
     }
 
+    .profile-photo img:hover {
+        transform: scale(1.6);
+    }
+
     .presentation h1 {
         font-size: 300%;
     }
@@ -48,6 +66,10 @@
     .profile-photo img {
         width: 60%;
         height: auto;
+    }
+
+    .profile-photo img:hover {
+        transform: scale(1.7);
     }
 
     .presentation p {
@@ -72,6 +94,10 @@
     .profile-photo img {
         width: 50%;
         height: auto;
+    }
+
+    .profile-photo img:hover {
+        transform: scale(1.5);
     }
 
     .presentation p {

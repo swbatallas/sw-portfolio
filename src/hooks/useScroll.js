@@ -1,18 +1,23 @@
 import { useEffect, useState } from 'react'
 
-export function useScroll() {
-    const [scrollPosition, setScrollPosition] = useState(0)
-
-    const onScroll = () => {
-        const scrollProgress = window.scrollY
-        const pageHeight = document.body.scrollHeight - window.innerHeight
-        setScrollPosition((scrollProgress / pageHeight) * 100)
-    }
+export const useScroll = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
-        window.addEventListener('scroll', onScroll)
-        return () => window.removeEventListener('scroll', onScroll)
-    }, [])
+        const updatePosition = () => {
+            const currentProgress = window.pageYOffset;
+            const scrollHeight = document.body.scrollHeight - window.innerHeight;
+            if (scrollHeight) {
+                setScrollPosition(
+                    Number((currentProgress / scrollHeight).toFixed(2)) * 100
+                );
+            }
+        }
 
-    return scrollPosition
+        window.addEventListener("scroll", updatePosition);
+        updatePosition();
+        return () => window.removeEventListener("scroll", updatePosition);
+    }, []);
+
+    return scrollPosition;
 }

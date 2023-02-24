@@ -1,47 +1,30 @@
-import React, { useRef } from 'react'
-import { Container, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
+import React from 'react'
 import './Projects.css'
-import { useTranslation } from 'react-i18next';
+import { projectData } from './projectData'
+import { Button, Container, Image } from 'react-bootstrap'
+
 
 
 function Projects() {
-  const { t } = useTranslation();
-  const projectsRef = useRef(null)
-
-/*   useLayoutEffect(() => {
-    if (projectsRef) {
-      setTimeout(() => { projectsRef.current.scrollIntoView() }, 300)
-    }
-  }, [projectsRef]) */
-
-  const fragenTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Próximamente disponible
-    </Tooltip>
-  );
 
   return (
-      <Container ref={projectsRef} className='projects mt-5'>
-        <h1 className='my-5'>{t('projectstitle')}</h1>
-        <Card className='card-project'>
-          <Card.Header className='d-flex flex-column'>
-            <Card.Img variant='top' src='Media/trivial.png' alt={t('trivial-image')} />
-            <Card.Title className='mt-2'>
-              FRAGEN
-            </Card.Title>
-          </Card.Header>
-          <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-            <Card.Text className='text-center'>
-              {t('trivial-description')}
-            </Card.Text>
-            <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={fragenTooltip}>
-              <Button variant='info'>
-                Fragen
-              </Button>
-            </OverlayTrigger>
-          </Card.Body>
-        </Card>
+    <Container className='min-vh-100' fluid>
+      <h1 className='text-center'>Proyectos</h1>
+      <Container className='mb-2 d-flex justify-content-center align-items-center' fluid>
+        {projectData.map((project, key) => (
+          <div className='project-container m-4' key={key}>
+            <Image src={project.src} alt={project.name} />
+            <Container
+              className='project-description d-flex flex-column justify-content-center align-items-center'>
+              <h2>{project.name}</h2>
+              <p>{project.description.es}</p>
+              <Button>Ver mas</Button>
+            </Container>
+          </div>
+        ))}
       </Container>
+    </Container>
+
   )
 }
 

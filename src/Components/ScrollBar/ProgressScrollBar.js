@@ -2,7 +2,7 @@ import React from 'react'
 import './ScrollBar.css'
 import { useScroll } from '../../hooks/useScroll'
 
-export default function ScrollBar() {
+export default function ProgressScrollBar() {
     const scrollPosition = useScroll()
 
     return (
