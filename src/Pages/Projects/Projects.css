@@ -1,6 +1,6 @@
 .project-container {
     position: relative;
-    max-width: 30%;
+    max-height: 100vh;
 }
 
 .project-container img {
