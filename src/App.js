@@ -1,15 +1,19 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom'
-import NavigationBar from './Components/Navbar/NavigationBar';
-import AnimatedRoutes from './Components/AnimatedRoutes';
+import Profile from './Pages/Profile/Profile';
+import Projects from './Pages/Projects/Projects';
+import Skills from './Pages/Skills/Skills';
+import ProgressScrollBar from './Components/ScrollBar/ProgressScrollBar';
 
 function App() {
 
   return (
-    <Router>
-      <NavigationBar />
-      <AnimatedRoutes />
-    </Router>
+    <>
+      <ProgressScrollBar />
+      <Profile />
+      <Skills />
+      <Projects />
+    </>
+
   );
 }
 

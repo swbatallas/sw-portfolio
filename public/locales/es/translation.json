@@ -5,7 +5,7 @@
 		"projects": "Proyectos"
 	},
 	"profile-photo": "foto de perfil",
-	"description": "Desarrollador Full Stack. Soy un estudiante de bootcamp en The Bridge y tengo experiencia realizando proyectos con React, MongoDB y Figma; entre otras tecnologías.",
+	"description": "Hola! Soy un apasionado de la tecnología desde pequeño, así que realicé un bootcamp para profesionalizarme en el desarrollo web. Actualmente, estoy aumentando mis conocimientos de forma autodidacta.",
 	"projectstitle": "Proyectos",
 	"trivial-image": "imagen del trivial",
 	"trivial-description": "Juego de trivial en desarrollo creado junto a mis compañeros de The Bridge.",
@@ -16,5 +16,6 @@
 		"react": "logo de ReactJS",
 		"nodejs": "logo de NodeJS"
 	},
-	"knowledges": "Conocimientos"
+	"knowledges": "Conocimientos",
+	"download-resume": "Descargar CV"
 }

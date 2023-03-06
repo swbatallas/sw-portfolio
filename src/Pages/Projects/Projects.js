@@ -1,53 +1,34 @@
-import React, { useRef, useLayoutEffect } from 'react'
-import { Container, Card, Button, Tooltip, OverlayTrigger } from 'react-bootstrap'
+import React from 'react'
 import './Projects.css'
-import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+import { projectData } from './projectData'
+import { Button, Row, Col, Container, Image } from 'react-bootstrap'
+
 
 
 function Projects() {
-  const { t } = useTranslation();
-  const projectsRef = useRef(null)
-
-  useLayoutEffect(() => {
-    if (projectsRef) {
-      setTimeout(() => { projectsRef.current.scrollIntoView() }, 300)
-    }
-  }, [projectsRef])
-
-  const fragenTooltip = (props) => (
-    <Tooltip id="button-tooltip" {...props}>
-      Próximamente disponible
-    </Tooltip>
-  );
 
   return (
-    <motion.div
-      intial={{ width: 0 }}
-      animate={{ width: '100%' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}>
-      <Container ref={projectsRef} className='projects mt-5'>
-        <h1 className='my-5'>{t('projectstitle')}</h1>
-        <Card className='card-project'>
-          <Card.Header className='d-flex flex-column'>
-            <Card.Img variant='top' src='Media/trivial.png' alt={t('trivial-image')} />
-            <Card.Title className='mt-2'>
-              FRAGEN
-            </Card.Title>
-          </Card.Header>
-          <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
-            <Card.Text className='text-center'>
-              {t('trivial-description')}
-            </Card.Text>
-            <OverlayTrigger placement="top" delay={{ show: 250, hide: 400 }} overlay={fragenTooltip}>
-              <Button variant='info'>
-                Fragen
-              </Button>
-            </OverlayTrigger>
-          </Card.Body>
-        </Card>
-      </Container>
-    </motion.div>
+    <Container className='min-vh-100' fluid>
+      <h1 className='title text-center text-uppercase mb-4'>Proyectos</h1>
+      <Row>
+        {projectData.map((project, key) => (
+          <Col xs={12} md={6} lg={4} xl={3}>
+            <div className='project-container m-4' key={key}>
+              <Image src={project.src} alt={project.name} />
+              <Container
+                className='project-description d-flex flex-column justify-content-center align-items-center'>
+                <h2>{project.name}</h2>
+                <p>{project.description.es}</p>
+                <Button href={project.url} target="blank">
+                  Visitar web
+                </Button>
+              </Container>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </Container>
+
   )
 }
 

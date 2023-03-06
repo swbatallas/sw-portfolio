@@ -1,45 +1,9 @@
-.mern {
-    height: 100%;
+.raise {
+    transition: transform .15s;
 }
 
-.mern img {
-    width: 55%;
-    height: auto;
-}
-
-.card-skills {
-    width: 90%;
-}
-
-.card p{
-    font-size: small;
-}
-
-.card>.card-body p {
-    margin-top: 0;
-}
-
-.button-to-mern {
-    margin-top: 5%;
-    font-size: small !important;
-}
-
-@media((min-width:768px)) {
-
-    .card p{
-        font-size: medium;
-    }
-
-    .card-skills button {
-        font-size: medium;
-    }
-
-}
-
-@media((min-width:992px)) {
-
-    .card p{
-        font-size:larger;
-    }
-
+.raise:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+    transform: scale(1.3);
 }
