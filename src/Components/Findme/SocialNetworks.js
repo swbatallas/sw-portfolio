@@ -8,8 +8,6 @@ export default function SocialNetworks() {
         { name: 'LinkedIn', url: 'https://linkedin.com/in/stewartbatallas/' },
         { name: 'Github', url: 'https://github.com/swbatallas' },
         { name: 'Twitter', url: 'https://twitter.com/sw_batallas' },
-        { name: 'Instagram', url: 'https://instagram.com/sw_batallas/' },
-        { name: 'Mail', url: 'mailto:stewartbatallasminda@gmail.com' },
         { name: 'CV', url: 'stewart-cv-2002.pdf' }
     ]
 
@@ -22,7 +20,7 @@ export default function SocialNetworks() {
                     </Tooltip>
                 )}
                     placement="top" key={network.name}>
-                    <a href={network.url} target="_blank" rel="noreferrer">
+                    <a href={network.url} target="_blank" rel="noreferrer" className='mx-1'>
                         <Button className='buttons d-flex justify-content center align-items-center'
                             variant='light'>
                             <Image role='img' src={`Media/${network.name.toLowerCase()}.svg`} alt={network.name} />

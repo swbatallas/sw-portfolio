@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <ProgressScrollBar />
+{/*       <ProgressScrollBar /> */}
       <Profile />
       <Skills />
       <Projects />

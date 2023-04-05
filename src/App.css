@@ -18,7 +18,7 @@ h1 {
 
 .title {
     font-weight: 800;
-    font-size: 400%;
+    font-size: 350%;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -40,8 +40,8 @@ p {
     font-family: 'Heebo', sans-serif;
 }
 
-/* detener scroll */
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
+/* Projects CSS */
+.project-image {
+    max-height: 60vh;
+    width: auto;
 }

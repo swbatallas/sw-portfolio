@@ -13,12 +13,12 @@ export default function Profile() {
     const [clearBackground, setClearBackground] = useState('whitesmoke')
     const [opacity, setOpacity] = useState(0)
 
-    useEffect(() =>
+/*     useEffect(() =>
         isHovering ?
             (setClearBackground('#212529'), setOpacity(1), document.body.classList.add('stop-scrolling'))
             :
             (setClearBackground('whitesmoke'), setOpacity(0), document.body.classList.remove('stop-scrolling'))
-        , [isHovering])
+        , [isHovering]) */
 
     return (
         <Container
