@@ -1,14 +1,23 @@
-import { Container } from "react-bootstrap"
+import { Row, Col, Container, Image } from "react-bootstrap"
 export default function Project(props) {
 
-    const { proyecto } = props.proyecto
+    const proyecto = props.proyect
 
-    return <Container className='d-flex justify-content-center align-items-center my-3'>
-        <img src={`/Media/${proyecto.img}.png`} className='project-image' alt={`Imagen de ${proyecto}`} />
-        <Container>
-            <h2 className='text-center'>{proyecto.title}</h2>
-            <p className='text-center'>{proyecto.description}</p>
+    return <>
+        <h2 className="text-center mt-5">{proyecto.title}</h2>
+        <h5 className="text-center mx-2">{proyecto.description}</h5>
+        <Container fluid>
+            <Row>
+                {Object.entries(proyecto.caracteristicas).map((caracteristica) => {
+                    return <Col className="col-project">
+                        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+                            <Image src={`/Media/${caracteristica[1].img}`} className="project-image" alt="imagen de project 0" rounded />
+                            <h1 className="mt-4">{caracteristica[0]}</h1>
+                            <p className="text-center mx-3">{caracteristica[1].description}</p>
+                        </div>
+                    </Col>
+                })}
+            </Row>
         </Container>
-    </Container>
-
+    </>
 }

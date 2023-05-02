@@ -1,0 +1,28 @@
+{
+    "unio": {
+        "title": "UNIO",
+        "description": "Unio es una biblioteca interactiva sobre los personajes de marvel.",
+        "caracteristicas": {
+            "Iniciar sesion": {
+                "img": "unio-signin.png",
+                "description": "Puedes iniciar sesión con la cuenta de Google o como invitado."
+            },
+            "Home": {
+                "img": "unio-home.png",
+                "description": "Pantalla principal de la APP. Aparecen los personajes de la base de datos con scroll infinito y carga de personajes en el scroll. Incluye un buscador de personajes."
+            },
+            "Personaje": {
+                "img": "unio-personaje.png",
+                "description": "Incluye valoración personal y valoración global. 'Mostrar información' muestra cómics y un enlace a la información en Marvel DB. 'Comentarios' da acceso a los comentarios de los usuarios sobre el personaje y la opción para dejar un comentario."
+            },
+            "Ranking": {
+                "img": "unio-ranking.png",
+                "description": "Ranking de los personajes mejor valorados por los usuarios. "
+            },
+            "Ajustes": {
+                "img": "unio-settings.png",
+                "description": "Desde ajustes, puedes cambiar tu foto de perfil o eliminarla, modificar la contraseña, cambiar el idioma, activar el modo oscuro y cerrar sesión."
+            }
+        }
+    }
+}

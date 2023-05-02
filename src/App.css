@@ -6,6 +6,7 @@
     font-family: 'Heebo', sans-serif;
     font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
+    border: 2px red;
 }
 
 .card {
@@ -44,4 +45,14 @@ p {
 .project-image {
     max-height: 60vh;
     width: auto;
+    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.3);
+    transition: transform .2s
+}
+
+.project-image:hover {
+    transform: scale(1.2);
+}
+
+.col-project {
+    display: inline-block
 }

@@ -1,8 +1,7 @@
 import './App.css';
 import Profile from './Pages/Profile/Profile';
-import Projects from './Pages/Projects/Projects';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import Skills from './Pages/Skills/Skills';
-import ProgressScrollBar from './Components/ScrollBar/ProgressScrollBar';
 
 function App() {
 
@@ -11,7 +10,7 @@ function App() {
 {/*       <ProgressScrollBar /> */}
       <Profile />
       <Skills />
-      <Projects />
+      <Portfolio />
     </>
 
   );
