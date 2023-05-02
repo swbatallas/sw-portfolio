@@ -53,6 +53,7 @@ p {
     transform: scale(1.2);
 }
 
-.col-project {
-    display: inline-block
+/* Contacto CSS */
+form {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
